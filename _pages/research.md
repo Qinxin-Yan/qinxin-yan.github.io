@@ -38,7 +38,7 @@ We prove comparison principles of the viscosity solutions of Hamilton–Jacobi e
 *Viscosity Solutions for McKean–Vlasov Control on a Torus*,  
 _SIAM Journal on Control and Optimization_, 60(6):3797–3824, 2022.  
 [Published Version (SIAM)](https://epubs.siam.org/doi/full/10.1137/22M1543732) 
-- **(b)** Eikonal equations on the Wasserstein space: we prove a comparison principle and uniqueness using a geometric subdifferential calculus.  
+
 **H. Mete Soner and Qinxin Yan**,  
 *Viscosity Solutions of the Eikonal Equation on the Wasserstein Space*,  
 _Applied Mathematics and Optimization_, 2024.  
