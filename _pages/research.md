@@ -10,7 +10,7 @@ layout: single
 
 My research lies at the intersection of **mean field control**, **mean field games**, **partial differential equations**, and **financial mathematics**. I am particularly interested in both the theoretical and numerical aspects of stochastic systems arising in large population dynamics, financial networks, and learning models.
 
-I work extensively with:
+I work with:
 - Viscosity solutions of partial differential equations in the Wasserstein space
 - Neural network-based solvers for high-dimensional control problems
 - Interacting particle systems and graph-based models
