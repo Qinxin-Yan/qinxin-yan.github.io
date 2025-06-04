@@ -9,14 +9,14 @@
 nav:
   - title: "About"
     url: /about/
-  - title: "Publications"
-    url: /publications/
+  - title: "Research"
+    url: /research/
+  - title: "Talks"
+    url: /talks/
   - title: "CV"
     url: /cv/
   - title: "Teaching"
     url: /teaching/
-  - title: "Talks"
-    url: /talks/
 
 # Basic Site Settings
 locale                   : "en-US"
@@ -44,7 +44,7 @@ author:
   email            : "qy3953@princeton.edu" 
 
   # Academic websites
-  academia         :  https://qinxin-yan.github.io # URL
+  #academia         :  https://qinxin-yan.github.io # URL
   #arxiv            : # URL - Update with the correct link to your profile
   #googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
   #impactstory      : # URL
