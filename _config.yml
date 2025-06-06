@@ -34,7 +34,7 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "pinxinphoto.png"
   name             : "Qinxin Yan"
   pronouns         : "she/her/hers"  
   #bio              : "Short biography for the left-hand sidebar"
