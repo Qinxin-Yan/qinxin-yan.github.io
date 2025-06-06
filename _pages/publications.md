@@ -1,6 +1,6 @@
 ---
 title: "Research"
-permalink: /research/
+permalink: /publications/
 nav: true
 author_profile: true
 layout: single
