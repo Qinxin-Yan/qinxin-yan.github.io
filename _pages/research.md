@@ -43,6 +43,7 @@ _SIAM Journal on Control and Optimization_, 60(6):3797–3824, 2022.
 **Viscosity Solutions of the Eikonal Equation on the Wasserstein Space**,  
 _Applied Mathematics and Optimization_, 2024.  
 [Published Version (Springer)](https://link.springer.com/article/10.1007/s00245-024-10145-2) 
+
 ---
 
 ### 3. Large Interacting Particle Systems on Sparse Graphs
