@@ -19,4 +19,4 @@ My current projects include:
 - Large interacting particle systems with singular interactions on sparse graphs
 - Applications of mean field theory and Wasserstein gradient flows in large-scale neural networks
 
-Feel free to explore my [research](/research/) to learn more.
+Feel free to explore my [reseach](/publications/) to learn more.
