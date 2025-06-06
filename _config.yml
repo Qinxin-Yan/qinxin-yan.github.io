@@ -6,17 +6,17 @@
 # `jekyll serve -l -H localhost`. If you change this file, please restart the 
 # server process.
 
-nav:
-  - title: "About"
-    url: /about/
-  - title: "Research"
-    url: /research/
-  - title: "Talks"
-    url: /talks/
-  - title: "CV"
-    url: /cv/
-  - title: "Teaching"
-    url: /teaching/
+#nav:
+#  - title: "About"
+#    url: /about/
+#  - title: "Research"
+#    url: /research/
+#  - title: "Talks"
+#    url: /talks/
+#  - title: "CV"
+#    url: /cv/
+#  - title: "Teaching"
+#    url: /teaching/
 
 # Basic Site Settings
 locale                   : "en-US"

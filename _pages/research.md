@@ -22,8 +22,8 @@ I work with:
 
 We study numerical methods for solving mean field optimal control problems by leveraging machine learning techniques. A convergence proof based on propogation of chaos and Rademacher complexity is provided. We also discuss universal approximation theorem of the neural networks on Wasserstein spaces.
 
-**H. Mete Soner, Josef Teichmann, and Qinxin Yan**,  
-*Learning Algorithms for Mean Field Optimal Control*,  
+*H. Mete Soner, Josef Teichmann, and Qinxin Yan*,  
+**Learning Algorithms for Mean Field Optimal Control**,  
 Preprint, 2025.  
 [arXiv:2503.17869](https://arxiv.org/abs/2503.17869)
 
@@ -34,13 +34,13 @@ Preprint, 2025.
 We prove comparison principles of the viscosity solutions of Hamilton–Jacobi equations  on the Wasserstein spaces.
 
 
-**H. Mete Soner and Qinxin Yan**,  
-*Viscosity Solutions for McKean–Vlasov Control on a Torus*,  
+*H. Mete Soner and Qinxin Yan*,  
+**Viscosity Solutions for McKean–Vlasov Control on a Torus**,  
 _SIAM Journal on Control and Optimization_, 60(6):3797–3824, 2022.  
 [Published Version (SIAM)](https://epubs.siam.org/doi/full/10.1137/22M1543732) 
 
-**H. Mete Soner and Qinxin Yan**,  
-*Viscosity Solutions of the Eikonal Equation on the Wasserstein Space*,  
+*H. Mete Soner and Qinxin Yan*,  
+**Viscosity Solutions of the Eikonal Equation on the Wasserstein Space**,  
 _Applied Mathematics and Optimization_, 2024.  
 [Published Version (Springer)](https://link.springer.com/article/10.1007/s00245-024-10145-2) 
 ---
@@ -49,7 +49,7 @@ _Applied Mathematics and Optimization_, 2024.
 
 We investigate particle systems with singular local interactions through hitting times on sparse graphs, motivated by problems in systemic risk and network fragility. 
 
-**Yucheng Guo and Qinxin Yan**,  
-*Particle Systems with Local Interactions via Hitting Times and Cascades on Graphs*,  
+*Yucheng Guo and Qinxin Yan*,  
+**Particle Systems with Local Interactions via Hitting Times and Cascades on Graphs**,  
 Preprint, 2025.  
 [arXiv:2505.18448](https://arxiv.org/abs/2505.18448)
