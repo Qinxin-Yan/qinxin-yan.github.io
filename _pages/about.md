@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am **Qinxin Yan**, a fourth-year PhD student in the [Program in Applied and Computational Mathematics (PACM)](https://www.pacm.princeton.edu/) at Princeton University. I am fortunate to be advised by [Prof. H. Mete Soner](https://soner.princeton.edu/) in the Department of Operations Research and Financial Engineering (ORFE).
+I am **Qinxin Yan**, a fourth-year PhD student in the [Program in Applied and Computational Mathematics (PACM)](https://www.pacm.princeton.edu/) at Princeton University. I am fortunate to be advised by [Prof. H. Mete Soner](https://soner.princeton.edu/) in the Department of Operations Research and Financial Engineering (ORFE)..
 
 My research lies at the intersection of **mean field control**, **mean field games**, **partial differential equations**, and **financial mathematics**, with a focus on both theoretical foundations and machine learning-based numerical algorithms.
 
