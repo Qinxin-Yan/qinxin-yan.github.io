@@ -21,7 +21,7 @@ nav:
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Qinxin Yan – PhD Student at Princeton"
+title                    : "Qinxin Yan"
 title_separator          : "-"
 name                     : &name "Qinxin Yan"
 description              : &description "PhD Student at Princeton"
