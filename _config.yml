@@ -21,10 +21,10 @@ nav:
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Qinxin Yan"
+title                    : "Qinxin Yan – PhD Student at Princeton"
 title_separator          : "-"
-name                     : &name "Your Name"
-description              : &description "personal description"
+name                     : &name "Qinxin Yan"
+description              : &description "PhD Student at Princeton"
 url                      : "https://qinxin-yan.github.io" # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "academicpages/academicpages.github.io"
@@ -323,6 +323,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
   - jemoji
+  - jekyll-seo-tag
 
 # Mimic GitHub Pages with --safe
 whitelist:
