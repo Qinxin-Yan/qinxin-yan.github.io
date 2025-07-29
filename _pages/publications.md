@@ -57,7 +57,8 @@ Preprint, 2025.
 
 We study Markov perfect equilibria in continuous-time dynamic games with finitely many symmetric players. We prove the convergence of both Picard and weighted Picard iterations, yielding efficient computational methods. Numerical experiments confirm the effectiveness of algorithms based on this approach.
 
-*Felix Höfer, Mathieu Laurière, H. Mete Soner, Qinxin Yan*
-**Iterative Schemes for Markov Perfect Equilibria**
+*Felix Höfer, Mathieu Laurière, H. Mete Soner, Qinxin Yan*,
+**Iterative Schemes for Markov Perfect Equilibria**,
+Preprint, 2025.
 [arXiv:2507.20898](https://arxiv.org/abs/2507.20898)
 
