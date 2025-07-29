@@ -12,24 +12,13 @@ My research lies at the intersection of **mean field control**, **mean field gam
 
 I work with:
 - Viscosity solutions of partial differential equations in the Wasserstein space
-- Neural network-based solvers for high-dimensional control problems
 - Interacting particle systems and graph-based models
 - Applications of mean field theory in systemic risk and machine learning
+- Numerical methods for high-dimensional control problems and games
 
 ---
 
-### 1. Machine Learning and Mean Field Optimal Control
-
-We study numerical methods for solving mean field optimal control problems by leveraging machine learning techniques. A convergence proof based on propogation of chaos and Rademacher complexity is provided. We also discuss universal approximation theorem of the neural networks on Wasserstein spaces.
-
-*H. Mete Soner, Josef Teichmann, and Qinxin Yan*,  
-**Learning Algorithms for Mean Field Optimal Control**,  
-Preprint, 2025.  
-[arXiv:2503.17869](https://arxiv.org/abs/2503.17869)
-
----
-
-### 2. Viscosity Solutions in Wasserstein Space
+### 1. Viscosity Solutions in Wasserstein Space
 
 We prove comparison principles of the viscosity solutions of Hamilton–Jacobi equations  on the Wasserstein spaces.
 
@@ -46,7 +35,7 @@ _Applied Mathematics and Optimization_, 2024.
 
 ---
 
-### 3. Large Interacting Particle Systems on Sparse Graphs
+### 2. Large Interacting Particle Systems on Sparse Graphs
 
 We investigate particle systems with singular local interactions through hitting times on sparse graphs, motivated by problems in systemic risk and network fragility. 
 
@@ -54,3 +43,21 @@ We investigate particle systems with singular local interactions through hitting
 **Particle Systems with Local Interactions via Hitting Times and Cascades on Graphs**,  
 Preprint, 2025.  
 [arXiv:2505.18448](https://arxiv.org/abs/2505.18448)
+
+---
+
+### 3. Numerical Methods for Mean Field Optimal Control and N-particle Games
+
+We study numerical methods for solving mean field optimal control problems by leveraging machine learning techniques. A convergence proof based on propogation of chaos and Rademacher complexity is provided. We also discuss universal approximation theorem of the neural networks on Wasserstein spaces.
+
+*H. Mete Soner, Josef Teichmann, and Qinxin Yan*,  
+**Learning Algorithms for Mean Field Optimal Control**,  
+Preprint, 2025.  
+[arXiv:2503.17869](https://arxiv.org/abs/2503.17869)
+
+We study Markov perfect equilibria in continuous-time dynamic games with finitely many symmetric players. We prove the convergence of both Picard and weighted Picard iterations, yielding efficient computational methods. Numerical experiments confirm the effectiveness of algorithms based on this approach.
+
+*Felix Höfer, Mathieu Laurière, H. Mete Soner, Qinxin Yan*
+**Iterative Schemes for Markov Perfect Equilibria**
+[arXiv:2507.20898](https://arxiv.org/abs/2507.20898)
+
