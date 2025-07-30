@@ -62,3 +62,5 @@ We study Markov perfect equilibria in continuous-time dynamic games with finitel
 Preprint, 2025.
 [arXiv:2507.20898](https://arxiv.org/abs/2507.20898)
 
+---
+
