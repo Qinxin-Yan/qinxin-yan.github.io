@@ -37,7 +37,7 @@ _Applied Mathematics and Optimization_, 2024.
 
 ### 2. Large Interacting Particle Systems on Sparse Graphs
 
-We investigate particle systems with singular local interactions through hitting times on sparse graphs, motivated by problems in systemic risk and network fragility. 
+We investigate particle systems with singular local interactions through hitting times on sparse graphs, motivated by problems in systemic risk in financial networks. 
 
 *Yucheng Guo and Qinxin Yan*,  
 **Particle Systems with Local Interactions via Hitting Times and Cascades on Graphs**,  
