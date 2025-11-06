@@ -14,11 +14,11 @@ My research develops asymptotic mathematical frameworks for **large stochastic a
 Previously, I was a visiting scholar with the [Insurance Mathematics and Stochastic Finance Group (Group 3)](https://math.ethz.ch/imsf) in the Department of Mathematics at ETH Zurich. There, I worked with [Prof. Josef Teichmann](https://people.math.ethz.ch/~jteichma/) on machine learning algorithms for Mckean-Vlasov control, and with [Prof. Beatrice Acciaio](https://people.math.ethz.ch/~beacciaio/) on the mean field formulation of large neural networks.
 
 My current projects include:
-- Viscosity solutions of Hamilton–Jacobi equations arising in mean field control.
+- Viscosity solutions of Hamilton–Jacobi equations arising in Mckean-Vlasov control.
 - Machine Learning for Mckean-Vlasov optimal control problems and mean field games.
 - Large stochastic particle systems with singular interactions on sparse graphs, with applications in systemtic risk in financial systems.
 - Applications of mean field theory and Wasserstein gradient flows in large-scale neural networks.
 
-Feel free to explore my [reseach](/publications/) to learn more.
+Please explore my [reseach](/publications/) to learn more.
 
 I am on the job market for fall 2025.
