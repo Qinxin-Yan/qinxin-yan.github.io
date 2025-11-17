@@ -17,6 +17,8 @@ nav:
     url: /cv/
   - title: "Teaching"
     url: /teaching/
+  - title: "Code"
+    url: /code/
 
 # Basic Site Settings
 locale                   : "en-US"
@@ -242,6 +244,9 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
+  code:
+    output: true
+    permalink: /:collection/:path/
 
 
 # These settings control how pages and collections are included in the site
@@ -264,6 +269,7 @@ defaults:
     values:
       layout: single
       author_profile: true
+
   # _teaching
   - scope:
       path: ""
@@ -292,6 +298,7 @@ defaults:
   #    author_profile: true
   #    share: true
   #    comment: true
+
   # _talks
   - scope:
       path: ""
