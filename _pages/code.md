@@ -14,7 +14,7 @@ author_profile: true
 
 ### Learning Algotihm for Mean Field Control
 
-Repository:  
+Github Repository:  
 [github.com/Qinxin-Yan/Mean-Field-Control](https://github.com/Qinxin-Yan/Mean-Field-Control)
 
 This repository contains the Python implementation of the neural network-based numerical algorithm for mean field control, discussed in the paper Learning Algorithm for Mean Field Control.
