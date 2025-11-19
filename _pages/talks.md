@@ -8,6 +8,16 @@ layout: single
 
 ### Selected Talks
 
+#### **PACM Graduate Student Seminar **  
+October 2025  
+**Title:** *Singular Interacting Particle System and Default Cascade on Sparse Graph*
+
+
+#### **SIAM Conference on Financial Mathematics and Engineering **  
+July 2025  
+**Title:** *Learning Algorithm for Mckean-Vlasov Control*
+
+
 #### **ETH–Hong Kong–Imperial Mathematical Finance Workshop**  
 June 2024  
 **Title:** *Kuramoto Optimal Control Problem and Its Numerical Methods*

@@ -9,7 +9,7 @@ redirect_from:
 
 I am **Qinxin Yan**, a fifth-year PhD student in the [Program in Applied and Computational Mathematics (PACM)](https://www.pacm.princeton.edu/) at Princeton University. I am fortunate to be advised by [Prof. H. Mete Soner](https://soner.princeton.edu/) in the Department of Operations Research and Financial Engineering (ORFE).
 
-My research develops asymptotic mathematical frameworks for **large stochastic and strategic systems**, combining control theory and game theory to analyze and design decision mechanisms in multi-agent and networked environments. I blend stochastic analysis, mean-field theory, and graph-theoretic modeling with machine-learning–based algorithms to connect rigorous theory with applications in real-world problems, especially in finance and machine learning. 
+My research develops asymptotic mathematical frameworks for **large stochastic and strategic systems**, combining control theory and game theory to analyze and design decision mechanisms for multi-agent decision-making problems. I blend stochastic analysis, mean-field theory, and graph-theoretic modeling with machine-learning–based algorithms to connect rigorous theory with applications in real-world problems, especially in finance and machine learning. 
 
 Previously, I was a visiting scholar with the [Insurance Mathematics and Stochastic Finance Group (Group 3)](https://math.ethz.ch/imsf) in the Department of Mathematics at ETH Zurich. There, I worked with [Prof. Josef Teichmann](https://people.math.ethz.ch/~jteichma/) on machine learning algorithms for Mckean-Vlasov control, and with [Prof. Beatrice Acciaio](https://people.math.ethz.ch/~beacciaio/) on the mean field formulation of large neural networks.
 
@@ -17,6 +17,7 @@ My current projects include:
 - Viscosity solutions of Hamilton–Jacobi equations arising in Mckean-Vlasov control.
 - Machine Learning for Mckean-Vlasov optimal control problems and mean field games.
 - Large stochastic particle systems with singular interactions on sparse graphs, with applications in systemtic risk in financial systems.
+- Connections among Mckean-Vlasov control, wasserstein gradient flows and optimal transport.
 - Applications of mean field theory and Wasserstein gradient flows in large-scale neural networks.
 
 Please explore my [reseach](/publications/) to learn more.

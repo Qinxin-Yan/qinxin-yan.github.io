@@ -5,7 +5,13 @@ nav: true
 author_profile: true
 ---
 
+I am organizing the [Directed Reading Program(DRP)](https://www.math.princeton.edu/undergraduate/peer-advisors/directed-reading) in the Department of Mathematics at Princeton University. If you are an undergrad in Princeton University, and are interested in Mathematics, please check the website!
+
 ### Teaching Experience
+
+**Teaching Assistant**, Princeton University  
+*Optimal Learning* (Class of 75 students)  
+ Sept. 2025 – Dec. 2025
 
 **Teaching Assistant**, Princeton University  
 *Advanced Linear Algebra* (Class of 34 students)  
