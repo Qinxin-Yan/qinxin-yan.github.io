@@ -6,19 +6,8 @@ author_profile: true
 layout: single
 ---
 
-### Research Overview
 
-My research lies at the intersection of **mean field control**, **mean field games**, **partial differential equations**, and **financial mathematics**. I am particularly interested in both the theoretical and numerical aspects of stochastic systems arising in large population dynamics, financial networks, and learning models.
-
-I work with:
-- Viscosity solutions of partial differential equations in the Wasserstein space
-- Interacting particle systems and graph-based models
-- Applications of mean field theory in systemic risk and machine learning
-- Numerical methods for high-dimensional control problems and games
-
----
-
-### 1. Viscosity Solutions in Wasserstein Space
+### 1. Viscosity Solutions for Hamilton-Jacobi Equations on Wasserstein Space
 
 We prove comparison principles of the viscosity solutions of Hamilton–Jacobi equations  on the Wasserstein spaces.
 
@@ -37,7 +26,7 @@ _Applied Mathematics and Optimization_, 2024.
 
 ### 2. Large Interacting Particle Systems on Sparse Graphs
 
-We investigate particle systems with singular local interactions through hitting times on sparse graphs, motivated by problems in systemic risk in financial networks. 
+We investigate particle systems with singular local interactions through hitting times on sparse graphs, motivated by problems from systemic risk in financial networks. 
 
 *Yucheng Guo and Qinxin Yan*,  
 **Particle Systems with Local Interactions via Hitting Times and Cascades on Graphs**,  
@@ -46,7 +35,7 @@ Preprint, 2025.
 
 ---
 
-### 3. Numerical Methods for Mean Field Optimal Control and N-particle Games
+### 3. Numerical Methods for Mean Field Optimal Control and Multi-Agent Games
 
 We study numerical methods for solving mean field optimal control problems by leveraging machine learning techniques. A convergence proof based on propogation of chaos and Rademacher complexity is provided. We also discuss universal approximation theorem of the neural networks on Wasserstein spaces.
 
@@ -61,6 +50,7 @@ We study Markov perfect equilibria in continuous-time dynamic games with finitel
 **Iterative Schemes for Markov Perfect Equilibria**,
 Preprint, 2025.
 [arXiv:2507.20898](https://arxiv.org/abs/2507.20898)
+
 
 ---
 
