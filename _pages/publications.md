@@ -54,3 +54,11 @@ Preprint, 2025.
 
 ---
 
+### 4. Applications of Mean Field Control in Generative AI
+
+We provide a theoretical formualtion to explain the generalization property of overparamterized neural networks through implicit regularization of the trainining process. We consider the mean field formulation of wide neural networks, and propose an equivalent mean field control formulation for the loss function and the corresponding gradient flows.
+
+*Beatrice Acciaio, Jakob Heiss, Gudmund Pammer, Qinxin Tan*
+**Implicit Regularization of Large Neural Networks via Mean-Field Formulation**
+Preprint, 2026.
+[arXiv:2603.20892]https://arxiv.org/abs/2603.20892
