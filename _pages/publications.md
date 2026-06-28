@@ -58,6 +58,11 @@ in the discounted infinite-horizon setting. We consider randomized feedback poli
 **Policy Gradient for Continuous-Time Mean-Field Control**
 Preprint, 2026.
 [arXiv:2605.20718](https://arxiv.org/abs/2605.20718)
+
+*Erhan Bayraktar, Martin Hernandez, Qinxin Yan, Yuhua Zhu*, 
+**Mean-Field PhiBE: Continuous-Time Mean-Field Reinforcement Learning from Discrete-Time Data**
+Preprint, 2026.
+[arXiv:2606.26498](https://arxiv.org/abs/2606.26498)
 ---
 
 ### 4. Applications of Mean Field Control in Generative AI
