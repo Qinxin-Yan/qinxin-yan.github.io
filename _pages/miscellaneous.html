@@ -1,0 +1,14 @@
+---
+layout: archive
+title: "Miscellaneous"
+permalink: /miscellaneous/
+author_profile: true
+---
+
+Notes, essays, and computational experiments outside my main research.
+
+{% include base_path %}
+{% assign entries = site.miscellaneous | sort: "date" | reverse %}
+{% for post in entries %}
+  {% include archive-single.html %}
+{% endfor %}

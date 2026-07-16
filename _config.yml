@@ -19,6 +19,8 @@ nav:
     url: /teaching/
   - title: "Code"
     url: /code/
+  - title: "Miscellaneous"
+    url: /miscellaneous/
 
 # Basic Site Settings
 locale                   : "en-US"
@@ -247,6 +249,9 @@ collections:
   code:
     output: true
     permalink: /:collection/:path/
+  miscellaneous:
+    output: true
+    permalink: /miscellaneous/:path/
 
 
 # These settings control how pages and collections are included in the site
@@ -298,6 +303,16 @@ defaults:
       author_profile: true
       share: true
       comments: true
+  # _miscellaneous
+  - scope:
+      path: ""
+      type: miscellaneous
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      share: true
+      comments: false
   # _portfolio
   #- scope:
   #    path: ""

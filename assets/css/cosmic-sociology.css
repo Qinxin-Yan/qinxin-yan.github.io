@@ -1,0 +1,93 @@
+---
+---
+
+.cosmic-article {
+  font-size: 1.02em;
+  line-height: 1.75;
+}
+
+.cosmic-article .cosmic-lead {
+  margin: 0 0 2rem;
+  padding: 1.15rem 1.3rem;
+  border-left: 4px solid #4776a8;
+  background: rgba(71, 118, 168, 0.08);
+  font-size: 1.08em;
+}
+
+.cosmic-article .cosmic-question {
+  margin: 2rem 0;
+  padding: 1.25rem 1.4rem;
+  border-radius: 0.35rem;
+  background: #f4f7fa;
+}
+
+.cosmic-article .cosmic-question strong {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: #243b53;
+}
+
+.cosmic-article figure {
+  margin: 2.2rem 0;
+}
+
+.cosmic-article figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.25rem;
+}
+
+.cosmic-article figcaption {
+  margin-top: 0.7rem;
+  color: #5d6772;
+  font-size: 0.88em;
+  line-height: 1.45;
+}
+
+.cosmic-article .table-scroll {
+  width: 100%;
+  margin: 1.5rem 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.cosmic-article .table-scroll table {
+  min-width: 42rem;
+  margin: 0;
+}
+
+.cosmic-article mjx-container[display="true"] {
+  max-width: 100%;
+  padding: 0.35rem 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.cosmic-article .cosmic-links {
+  margin-top: 2.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+@media (prefers-color-scheme: dark) {
+  html[data-theme="dark"] .cosmic-article .cosmic-question {
+    background: #202a35;
+  }
+
+  html[data-theme="dark"] .cosmic-article .cosmic-question strong {
+    color: #d9e6f2;
+  }
+}
+
+@media (max-width: 600px) {
+  .cosmic-article {
+    font-size: 1em;
+  }
+
+  .cosmic-article .cosmic-lead,
+  .cosmic-article .cosmic-question {
+    padding: 1rem;
+  }
+}
