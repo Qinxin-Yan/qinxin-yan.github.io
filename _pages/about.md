@@ -9,7 +9,7 @@ redirect_from:
 
 I am **Qinxin Yan**, currently a Postdoc at University of Berkeley, in the group of [Prof. Xin Guo](https://xinguo.ieor.berkeley.edu/).
 
-I obtained my PhD in the [Program in Applied and Computational Mathematics (PACM)](https://www.pacm.princeton.edu/) at Princeton University. I was fortunate to be advised by [Prof. H. Mete Soner](https://soner.princeton.edu/) in the Department of Operations Research and Financial Engineering (ORFE).
+I obtained my PhD in the [Program in Applied and Computational Mathematics (PACM)](https://www.pacm.princeton.edu/) at Princeton University. I was fortunate to be advised by [Prof. H. Mete Soner](https://soner.princeton.edu/).
 
 
 My research develops asymptotic mathematical frameworks for **large stochastic and strategic systems**, combining control and game theory to analyze and design decision mechanisms in multi-agent settings. I blend stochastic simulation, mean-field theory, and graph-theoretic modeling with machine-learning–based algorithms to connect rigorous theory with applications in real-world problems, especially in finance and machine learning. 
