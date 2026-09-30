@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research — Qinxin Yan</title>
+  <meta name="description" content="Publications and preprints of Qinxin Yan on McKean–Vlasov control, Wasserstein space, mean-field games, and interacting particle systems.">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">Qinxin Yan</a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="research.html" aria-current="page">Research</a></li>
+          <li><a href="talks.html">Talks</a></li>
+          <li><a href="teaching.html">Teaching</a></li>
+          <li><a href="cv.html">CV</a></li>
+          <li><a href="code.html">Code</a></li>
+          <li><a href="miscellaneous.html">Miscellaneous</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap">
+
+      <header class="page-head">
+        <h1>Research</h1>
+        <p class="lede">Asymptotic frameworks for large stochastic and strategic systems: mean-field control and games, analysis on Wasserstein space, and interacting particle systems, with machine-learning methods that connect theory to computation.</p>
+      </header>
+
+      <section class="section">
+        <div class="section-title"><h2>Research themes</h2></div>
+        <ul class="themes">
+          <li>
+            <span class="num">01</span>
+            <h3>Hamilton–Jacobi equations on Wasserstein space</h3>
+            <p>Comparison principles for viscosity solutions of Hamilton–Jacobi equations on Wasserstein spaces.</p>
+          </li>
+          <li>
+            <span class="num">02</span>
+            <h3>Interacting particle systems on sparse graphs</h3>
+            <p>Singular local interactions through hitting times, motivated by systemic risk in financial networks.</p>
+          </li>
+          <li>
+            <span class="num">03</span>
+            <h3>Numerical methods for mean-field control and games</h3>
+            <p>Machine-learning algorithms for mean-field optimal control and multi-agent games, with convergence guarantees.</p>
+          </li>
+          <li>
+            <span class="num">04</span>
+            <h3>Mean-field control in generative AI</h3>
+            <p>A mean-field control view of wide neural networks and the implicit regularization of training.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section" id="journal">
+        <div class="section-title"><h2>Journal articles</h2></div>
+        <ol class="pubs">
+          <li class="pub">
+            <h3 class="pub-title">Learning Algorithm for Mean Field Optimal Control</h3>
+            <p class="pub-authors">H. Mete Soner, Josef Teichmann, and <span class="me">Qinxin Yan</span></p>
+            <p class="pub-venue"><em>SIAM Journal on Numerical Analysis</em>, 2026.</p>
+            <div class="pub-meta">
+              <span class="badge accepted">To appear</span>
+              <a class="chip" href="https://github.com/Qinxin-Yan/Mean-Field-Control">Code</a>
+              <span class="theme-tag">Theme 03</span>
+              <details>
+                <summary>Summary</summary>
+                <p class="pub-abstract">We study numerical methods for solving mean-field optimal control problems by leveraging machine learning techniques. A convergence proof based on propagation of chaos and Rademacher complexity is provided. We also discuss a universal approximation theorem for neural networks on Wasserstein spaces.</p>
+              </details>
+            </div>
+          </li>
+          <li class="pub">
+            <h3 class="pub-title">Iterative Schemes for Markov Perfect Equilibria</h3>
+            <p class="pub-authors">Felix Höfer, Mathieu Laurière, H. Mete Soner, and <span class="me">Qinxin Yan</span></p>
+            <p class="pub-venue"><em>Mathematical Finance</em>, 2026.</p>
+            <div class="pub-meta">
+              <span class="badge accepted">To appear</span>
+              <a class="chip" href="https://github.com/Qinxin-Yan/Picard-Iteration-For-Finite-Player-Game">Code</a>
+              <span class="theme-tag">Theme 03</span>
+              <details>
+                <summary>Summary</summary>
+                <p class="pub-abstract">We study Markov perfect equilibria in continuous-time dynamic games with finitely many symmetric players. We prove the convergence of both Picard and weighted Picard iterations, yielding efficient computational methods. Numerical experiments confirm the effectiveness of algorithms based on this approach.</p>
+              </details>
+            </div>
+          </li>
+          <li class="pub">
+            <h3 class="pub-title"><a href="https://link.springer.com/article/10.1007/s00245-024-10145-2">Viscosity Solutions of the Eikonal Equation on the Wasserstein Space</a></h3>
+            <p class="pub-authors">H. Mete Soner and <span class="me">Qinxin Yan</span></p>
+            <p class="pub-venue"><em>Applied Mathematics and Optimization</em>, 2024.</p>
+            <div class="pub-meta">
+              <span class="badge published">Published</span>
+              <a class="chip" href="https://link.springer.com/article/10.1007/s00245-024-10145-2">Springer</a>
+              <span class="theme-tag">Theme 01</span>
+              <details>
+                <summary>Summary</summary>
+                <p class="pub-abstract">We prove comparison principles for viscosity solutions of Hamilton–Jacobi equations on the Wasserstein space.</p>
+              </details>
+            </div>
+          </li>
+          <li class="pub">
+            <h3 class="pub-title"><a href="https://epubs.siam.org/doi/full/10.1137/22M1543732">Viscosity Solutions for McKean–Vlasov Control on a Torus</a></h3>
+            <p class="pub-authors">H. Mete Soner and <span class="me">Qinxin Yan</span></p>
+            <p class="pub-venue"><em>SIAM Journal on Control and Optimization</em>, 60(6):3797–3824, 2022.</p>
+            <div class="pub-meta">
+              <span class="badge published">Published</span>
+              <a class="chip" href="https://epubs.siam.org/doi/full/10.1137/22M1543732">SIAM</a>
+              <span class="theme-tag">Theme 01</span>
+              <details>
+                <summary>Summary</summary>
+                <p class="pub-abstract">We prove comparison principles for viscosity solutions of Hamilton–Jacobi equations on the Wasserstein space.</p>
+              </details>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="section" id="preprints">
+        <div class="section-title"><h2>Preprints</h2></div>
+        <ol class="pubs" style="--start: 4">
+          <li class="pub">
+            <h3 class="pub-title"><a href="https://arxiv.org/abs/2606.26498">Mean-Field PhiBE: Continuous-Time Mean-Field Reinforcement Learning from Discrete-Time Data</a></h3>
+            <p class="pub-authors">Erhan Bayraktar, Martin Hernandez, <span class="me">Qinxin Yan</span>, and Yuhua Zhu</p>
+            <p class="pub-venue">Preprint, 2026.</p>
+            <div class="pub-meta">
+              <a class="chip" href="https://arxiv.org/abs/2606.26498">arXiv:2606.26498</a>
+              <span class="theme-tag">Theme 03</span>
+            </div>
+          </li>
+          <li class="pub">
+            <h3 class="pub-title"><a href="https://arxiv.org/abs/2605.20718">Policy Gradient for Continuous-Time Mean-Field Control</a></h3>
+            <p class="pub-authors">Erhan Bayraktar, Martin Hernandez, <span class="me">Qinxin Yan</span>, and Yuhua Zhu</p>
+            <p class="pub-venue">Preprint, 2026.</p>
+            <div class="pub-meta">
+              <a class="chip" href="https://arxiv.org/abs/2605.20718">arXiv:2605.20718</a>
+              <span class="theme-tag">Theme 03</span>
+              <details>
+                <summary>Summary</summary>
+                <p class="pub-abstract">We propose a policy gradient method for entropy-regularized mean-field control in the discounted infinite-horizon setting. We consider randomized feedback policies and a coupled representative-particle/population system, in which the representative state evolves jointly with a population law governed by a McKean–Vlasov equation.</p>
+              </details>
+            </div>
+          </li>
+          <li class="pub">
+            <h3 class="pub-title"><a href="https://arxiv.org/abs/2603.20892">Implicit Regularization of Large Neural Networks via Mean-Field Formulation</a></h3>
+            <p class="pub-authors">Beatrice Acciaio, Jakob Heiss, Gudmund Pammer, and <span class="me">Qinxin Yan</span></p>
+            <p class="pub-venue">Preprint, 2026.</p>
+            <div class="pub-meta">
+              <a class="chip" href="https://arxiv.org/abs/2603.20892">arXiv:2603.20892</a>
+              <span class="theme-tag">Theme 04</span>
+              <details>
+                <summary>Summary</summary>
+                <p class="pub-abstract">We provide a theoretical formulation to explain the generalization property of overparameterized neural networks through implicit regularization of the training process. We consider the mean-field formulation of wide neural networks, and propose an equivalent mean-field control formulation for the loss function and the corresponding gradient flows.</p>
+              </details>
+            </div>
+          </li>
+          <li class="pub">
+            <h3 class="pub-title"><a href="https://arxiv.org/abs/2505.18448">Particle Systems with Local Interactions via Hitting Times and Cascades on Graphs</a></h3>
+            <p class="pub-authors">Yucheng Guo and <span class="me">Qinxin Yan</span></p>
+            <p class="pub-venue">Preprint, 2025.</p>
+            <div class="pub-meta">
+              <a class="chip" href="https://arxiv.org/abs/2505.18448">arXiv:2505.18448</a>
+              <span class="theme-tag">Theme 02</span>
+              <details>
+                <summary>Summary</summary>
+                <p class="pub-abstract">We investigate particle systems with singular local interactions through hitting times on sparse graphs, motivated by problems from systemic risk in financial networks.</p>
+              </details>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© 2026 Qinxin Yan</span>
+      <span><a href="mailto:qinxinyan@berkeley.edu">qinxinyan@berkeley.edu</a> · <a href="https://github.com/Qinxin-Yan">GitHub</a></span>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A Mathematical Dark Forest — Qinxin Yan</title>
+  <meta name="description" content="Can peaceful civilizations rationally end up attacking one another? A small stochastic game inspired by cosmic sociology suggests how a dark forest can emerge.">
+  <meta property="og:title" content="A Mathematical Dark Forest">
+  <meta property="og:description" content="A small stochastic game inspired by cosmic sociology suggests how a dark forest can emerge.">
+  <meta property="og:image" content="../images/cosmic-sociology-equilibria.png">
+  <link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [["\\(", "\\)"]], displayMath: [["\\[", "\\]"]] },
+      chtml: { scale: 1.08 }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="../index.html">Qinxin Yan</a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="../research.html">Research</a></li>
+          <li><a href="../talks.html">Talks</a></li>
+          <li><a href="../teaching.html">Teaching</a></li>
+          <li><a href="../cv.html">CV</a></li>
+          <li><a href="../code.html">Code</a></li>
+          <li><a href="../miscellaneous.html" aria-current="page">Miscellaneous</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap">
+      <article class="article">
+
+        <header class="article-head">
+          <a class="back" href="../miscellaneous.html">← Miscellaneous</a>
+          <h1>A Mathematical Dark Forest</h1>
+          <div class="meta">Qinxin Yan · July 15, 2026 · 10 min read</div>
+        </header>
+
+        <p class="lead">Can a universe full of intelligent life remain silent because everyone is afraid to speak? A small stochastic game is formulated to see when peaceful civilizations hide, when they strike first, and when both outcomes can be equilibria.</p>
+
+        <h2>Why might a crowded universe look empty?</h2>
+
+        <p>Imagine that humanity detects a signal from another star. We learn that someone is there, but almost nothing else. Are they peaceful? Are they afraid of us? Are they already deciding whether we are too dangerous to leave alive?</p>
+
+        <p>Any reply we send will take years to arrive, and the answer may take years more. By then, either civilization could be technologically or politically unrecognizable.</p>
+
+        <p>This is the unsettling question behind the “dark forest” in Cixin Liu's <em>The Dark Forest</em>. The book calls the study of interstellar strategic behavior <strong>Cosmic Sociology</strong>. Instead of asking how people or nations behave, it asks what happens when entire civilizations meet across enormous distances in the universe.</p>
+
+        <p>The argument begins with three <strong>axioms</strong>:</p>
+
+        <ol>
+          <li>Every civilization wants to survive.</li>
+          <li>Civilizations grow and expand.</li>
+          <li>Matter, energy, and habitable territory are ultimately limited.</li>
+        </ol>
+
+        <p>These ideas might create competition among civilizations in the universe, but they do not yet imply immediate war. Two additional mechanisms turn competition into a dark forest.</p>
+
+        <h3>The chain of suspicion</h3>
+
+        <p>Suppose civilization A sees civilization B. Even if B appears friendly, A cannot be sure that B really is friendly. More importantly, A cannot know whether B believes that <em>A</em> is friendly. Perhaps B will attack only because it fears that A might attack first.</p>
+
+        <p>A can reason about B's fear, B can reason about A's reasoning, and the loop continues. Neither side has to be evil. Fear and uncertainty are enough.</p>
+
+        <p>Distance makes this problem much worse. A conversation across light-years is not a conversation in the ordinary sense: it is an exchange of messages about the distant past. A reassuring signal may be honest and still be obsolete by the time it arrives.</p>
+
+        <h3>Technological explosion</h3>
+
+        <p>A weak civilization need not remain weak. One or two breakthroughs could allow it to overtake a much older rival. We humans have the first and the second industrial Revolution. “They cannot hurt us today” is therefore not a reliable reason to leave them alone. Waiting for better information also gives the other side time to become overwhelmingly powerful.</p>
+
+        <p>Put these mechanisms together and a grim logic appears. Revealing your location is dangerous, so hiding is sensible. If you discover another civilization, a first strike may look safer than waiting for intentions that cannot be verified and technological growth that cannot be predicted. This is the pathetic <strong>black forest</strong> conclusion.</p>
+
+        <p>The crucial point is not that alien civilizations must be aggressive. It is that peaceful civilizations can be pushed toward aggression by the structure of the situation. Cooperation would be better for everyone, but the cost of being wrong about a stranger may be extinction.</p>
+
+        <div class="callout">
+          <strong>The question for the model</strong>
+          <p>Will survival, uncertainty, and technological jumps create a peaceful equilibrium, a dark-forest equilibrium, or a transition between them as the number of civilizations changes?</p>
+        </div>
+
+        <h2>A general mathematical framework</h2>
+
+        <p>Let us try to provide a mathematical formulation, and start with a finite number of civilizations. Maybe we can later consider a mean-field approximation. This order matters: attacking one particular civilization can be enormously valuable even when that civilization is negligible relative to the whole population.</p>
+
+        <h3>State and choices</h3>
+
+        <p>Civilization \(i\) has state</p>
+
+        <div class="math-display">
+          \[
+          X_i(t)=\bigl(\ell_i,R_i(t),Z_i(t),V_i(t),\mu_i(t),\Theta_i(t)\bigr).
+          \]
+        </div>
+
+        <p>The components represent its location \(\ell_i\), resources \(R_i\), log technology \(Z_i\), visibility \(V_i\), beliefs \(\mu_i\), and hidden doctrine \(\Theta_i\). It chooses</p>
+
+        <div class="math-display">
+          \[
+          u_i(t)=\bigl(e_i(t),\iota_i(t),h_i(t),d_i(t),a_i(t,\cdot)\bigr),
+          \]
+        </div>
+
+        <p>corresponding to expansion, research, concealment, defense, and target-dependent attack intensity.</p>
+
+        <p>Why include all of this? Expansion and research make a civilization stronger, but these need resources, and may reveal its location. Concealment, on the other hand, reduces that danger, but slows growth. Defense helps after an attack, and preemption tries to prevent the attack altogether.</p>
+
+        <h3>A population that loses mass</h3>
+
+        <p>Extinction is absorbing, so we use a non-normalized survivor measure:</p>
+
+        <div class="math-display">
+          \[
+          m_t^N=\frac{1}{|\Omega|}\sum_{i=1}^{N_0}
+          \mathbf 1_{\{\tau_i>t\}}\,\delta_{X_i(t)},
+          \qquad
+          n_t^N=\int m_t^N(dx).
+          \]
+        </div>
+
+        <p>The shape of \(m_t^N\) describes the surviving civilizations, and its total mass \(n_t^N\) records how many remain. Normalizing too early would lose the important information: the universe should become less dangerous, and resource depletion should slow, when most civilizations are gone.</p>
+
+        <h3>Finite resources</h3>
+
+        <p>Let \(Q_t\) denote accessible matter and energy. A simple resource equation is</p>
+
+        <div class="math-display">
+          \[
+          \dot Q_t=-\int e^*(t,x)m_t(dx),
+          \qquad Q_t\ge 0.
+          \]
+        </div>
+
+        <p>This makes the “finite matter” assumption operational. Scarcity is not created merely because total matter is constant. It appears because accessible resources are depleted by the expansion of surviving civilizations.</p>
+
+        <h3>Technological jumps</h3>
+
+        <p>Technology follows a controlled jump process:</p>
+
+        <div class="math-display">
+          \[
+          dZ_t=\bigl[g_0+g_1\iota_t-\delta_ZZ_t\bigr]dt
+          +\sigma_ZdW_t+
+          \int_{\mathbb R_+}\xi\,N(dt,d\xi).
+          \]
+        </div>
+
+        <p>The jump measure has intensity</p>
+
+        <div class="math-display">
+          \[
+          \mathbb E[N(dt,d\xi)\mid X_t]
+          =\lambda_B(Z_t,\iota_t)F(d\xi)dt.
+          \]
+        </div>
+
+        <p>Ordinary progress is represented by the drift, and a rare, large \(\xi\) represents a technological explosion. Research can increase both the regular growth rate and the probability of a breakthrough.</p>
+
+        <h3>Delayed information and suspicion</h3>
+
+        <p>A distant civilization sees a noisy signal from the past:</p>
+
+        <div class="math-display">
+          \[
+          dY_t=s_{\Theta_t}\bigl(X_{\text{target}}(t-\tau),m_{t-\tau}\bigr)dt
+          +\sigma_YdB_t,
+          \qquad
+          \tau=\frac{\|\ell-\ell_{\text{target}}\|}{c}.
+          \]
+        </div>
+
+        <p>Its threat belief is a posterior probability such as</p>
+
+        <div class="math-display">
+          \[
+          P_t=\mathbb P(\Theta_t=1\mid\mathcal F_t^Y).
+          \]
+        </div>
+
+        <p>The exact belief state is a probability distribution over the target's technology, doctrine, and current condition. The model therefore becomes a <strong>partially observed game</strong>. The chain of suspicion then lives in the equilibrium fixed point: each civilization filters the other's behavior while knowing that the other is doing the same.</p>
+
+        <h3>Pairwise attacks</h3>
+
+        <p>Let \(S(x,y)\) measure the effectiveness of an attack by civilization \(x\) against \(y\). If the two sides attack at effective rates \(a(x,y)S(x,y)\) and \(\widehat a(y,x)S(y,x)\), then the probability that \(y\) strikes first in a simple exponential race is</p>
+
+        <div class="math-display">
+          \[
+          \frac{\widehat a(y,x)S(y,x)}
+          {\delta+a(x,y)S(x,y)+\widehat a(y,x)S(y,x)}.
+          \]
+        </div>
+
+        <p>Only after solving this private strike race do we average over the population of possible targets. This preserves the value of eliminating a particular existential threat.</p>
+
+        <h3>Survival-first objective</h3>
+
+        <p>The most literal objective would first maximize the probability of survival and only then optimize growth. For computation, let us use a large loss \(L\) for the absorbing extinction state. The representative civilization's value equation is schematically</p>
+
+        <div class="math-display">
+          \[
+          -\partial_tV=\sup_u\left\{
+          f+\mathcal L^{u,m,Q}V+\mathcal J^uV
+          +\Lambda^{u,m,Q}(-L-V)
+          \right\}.
+          \]
+        </div>
+
+        <p>The first terms describe ordinary payoffs, diffusion, and technological jumps. The last term is the expected loss from extinction. When \(L\) is large, a small increase in extinction risk can dominate normal economic gains.</p>
+
+        <p>Under the optimal policy, the survivor distribution moves forward according to</p>
+
+        <div class="math-display">
+          \[
+          \partial_tm_t=(\mathcal L^{u^*})^*m_t
+          +(\mathcal J^{u^*})^*m_t
+          -\Lambda^{u^*}m_t+\mathcal B.
+          \]
+        </div>
+
+        <p>The general equilibrium couples four objects:</p>
+
+        <ol>
+          <li>a backward value equation;</li>
+          <li>a forward population equation;</li>
+          <li>a resource-depletion equation; and</li>
+          <li>a Bayesian filtering equation.</li>
+        </ol>
+
+        <p>The policy must be optimal given the population, resources, and beliefs—and those paths must be generated by the same policy.</p>
+
+        <h2>A finite-state game we can compute</h2>
+
+        <p>The full model is too large for a first experiment, so let's compress it and make it simple first. Assume each surviving civilization has state</p>
+
+        <div class="math-display">
+          \[
+          x=(k,v)\in\{0,1,2,3\}\times\{\text{hidden},\text{visible}\},
+          \]
+        </div>
+
+        <p>where \(k\) is technological level and \(v\) is visibility. At each time it chooses one of three actions:</p>
+
+        <ul>
+          <li><strong>Hide:</strong> reduce visibility at a small cost.</li>
+          <li><strong>Research:</strong> increase the chance of ordinary and explosive technological progress, but become easier to detect.</li>
+          <li><strong>Preempt:</strong> reduce the chance that an opponent attacks first, while paying a larger cost and accepting retaliation risk.</li>
+        </ul>
+
+        <h3>Suspicion feeds on equilibrium behavior</h3>
+
+        <p>Let \(\bar a_t\) be the fraction of surviving civilizations choosing preemption. Perceived threat is</p>
+
+        <div class="math-display">
+          \[
+          p_t=\min\{1,p_0+\gamma\bar a_t\}.
+          \]
+        </div>
+
+        <p>The background term \(p_0\) captures irreducible uncertainty. The feedback coefficient \(\gamma\) captures self-fulfilling suspicion. If many others preempt, expecting an attack becomes more reasonable, and that expectation can make preemption optimal for everyone else.</p>
+
+        <h3>Population size changes encounter pressure</h3>
+
+        <p>If \(\bar v_t\) is the effective visible share, encounter pressure is</p>
+
+        <div class="math-display">
+          \[
+          E_t=(N-1)\eta\bar v_t.
+          \]
+        </div>
+
+        <p>The \(N-1\) factor is the finite-population correction. A civilization has more potential dangerous encounters when more civilizations exist.</p>
+
+        <p>For a civilization with technology \(k\) and visibility \(v\), waiting produces hazard</p>
+
+        <div class="math-display">
+          \[
+          \lambda_t^{\mathrm{wait}}(k,v)
+          =\lambda_0+E_t s(v)p_td(k).
+          \]
+        </div>
+
+        <p>Preemption reduces the first-strike part of this hazard but adds retaliation:</p>
+
+        <div class="math-display">
+          \[
+          \lambda_t^P(k,v)=\lambda_0+
+          [\lambda_t^{\mathrm{wait}}(k,v)-\lambda_0](1-f(k))
+          +E_t\rho_{\mathrm{ret}}(1-0.10k).
+          \]
+        </div>
+
+        <p>The choice to strike is therefore not automatic. It depends on whether first-strike protection outweighs the attack cost and retaliation risk.</p>
+
+        <h3>Dynamic equilibrium</h3>
+
+        <p>For action \(a\), the one-period value is</p>
+
+        <div class="math-display">
+          \[
+          \begin{aligned}
+          Q_t(x,a)={}&amp;\Delta r(x,a)+e^{-\rho\Delta}\Bigg[
+          S_t(x,a)\sum_{x'}P^a(x,x')V_{t+1}(x')\\
+          &amp;+[1-S_t(x,a)](-L)\Bigg].
+          \end{aligned}
+          \]
+        </div>
+
+        <p>We will use a small logit regularization,</p>
+
+        <div class="math-display">
+          \[
+          \pi_t(a\mid x)=
+          \frac{\exp\{Q_t(x,a)/\tau\}}
+          {\sum_b\exp\{Q_t(x,b)/\tau\}},
+          \]
+        </div>
+
+        <p>which makes the fixed-point iteration stable. The resulting solution is an \(\varepsilon\)-Nash equilibrium: actions that are slightly worse can still receive a small probability, and the approximation becomes tighter as \(\tau\) decreases.</p>
+
+        <p>The computation alternates between solving the value equation backward and evolving the surviving population forward. Because suspicion creates strategic complementarity, we run the solver twice for each \(N\): once from a nearly peaceful policy and once from a nearly universal-preemption policy.</p>
+
+        <h2>Numerical experiment</h2>
+
+        <p>We will use four technology levels, a 20-unit horizon, and a period length of 0.25. Extinction has loss \(L=80\). The experiment considers</p>
+
+        <div class="math-display">
+          \[
+          N\in\{2,5,10,20,30,40,50,75,100\}.
+          \]
+        </div>
+
+        <p>All parameters are illustrative. They are chosen to expose the model's qualitative mechanisms, not estimated from observations of extraterrestrial life.</p>
+
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>\(N\)</th>
+                <th>Preemption:<br>peace start</th>
+                <th>Preemption:<br>aggressive start</th>
+                <th>Survival:<br>peace start</th>
+                <th>Survival:<br>aggressive start</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>2</td><td>0.049</td><td>0.049</td><td>0.979</td><td>0.979</td></tr>
+              <tr><td>5</td><td>0.045</td><td>0.045</td><td>0.976</td><td>0.976</td></tr>
+              <tr><td>10</td><td>0.040</td><td>0.040</td><td>0.972</td><td>0.972</td></tr>
+              <tr class="coexist"><td>20</td><td>0.044</td><td>0.836</td><td>0.966</td><td>0.854</td></tr>
+              <tr class="coexist"><td>30</td><td>0.041</td><td>0.848</td><td>0.962</td><td>0.781</td></tr>
+              <tr><td>40</td><td>0.850</td><td>0.850</td><td>0.720</td><td>0.720</td></tr>
+              <tr><td>50</td><td>0.851</td><td>0.851</td><td>0.665</td><td>0.665</td></tr>
+              <tr><td>75</td><td>0.856</td><td>0.853</td><td>0.545</td><td>0.547</td></tr>
+              <tr><td>100</td><td>0.857</td><td>0.857</td><td>0.450</td><td>0.450</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="table-note">Highlighted rows: the two initializations converge to different equilibria.</p>
+
+        <figure>
+          <img src="../images/cosmic-sociology-equilibria.png" alt="Two charts showing equilibrium preemption rising sharply with population size and individual survival falling as population grows." width="1655" height="684" loading="lazy">
+          <figcaption>Mean preemption and individual survival as the number of civilizations changes. Different outcomes from the two initializations at \(N = 20\) and \(N = 30\) indicate equilibrium coexistence.</figcaption>
+        </figure>
+
+        <h2>Three regimes</h2>
+
+        <h3>1. Low density: \(N\le 10\)</h3>
+
+        <p>Both initializations converge to the same low-preemption equilibrium. Encounter pressure is small, so paying the cost of preemption is not worthwhile. Individual terminal survival remains above 97 percent.</p>
+
+        <h3>2. Coexistence: \(N=20\) and \(N=30\)</h3>
+
+        <p>The peaceful initialization converges to preemption near 4 percent, while the aggressive initialization converges above 83 percent. The same underlying environment supports two self-consistent outcomes.</p>
+
+        <p>When civilizations expect restraint, perceived threat stays low and restraint remains optimal. When they expect preemption, suspicion rises, striking first becomes individually rational, and the dark-forest belief validates itself.</p>
+
+        <p>The welfare difference is substantial. At \(N=30\), individual survival falls from 0.962 in the peaceful equilibrium to 0.781 in the aggressive equilibrium.</p>
+
+        <h3>3. High density: \(N\ge 40\)</h3>
+
+        <p>Both initializations converge to preemption near 85 percent. The larger number of potential encounters makes waiting sufficiently dangerous that the low-preemption fixed point disappears under this calibration. Individual survival falls to 0.450 by \(N=100\).</p>
+
+        <h2>What does the experiment tell us?</h2>
+
+        <p>The dark forest is an equilibrium possibility, not a theorem that follows from survival alone. Its emergence depends on the balance among extinction loss, encounter frequency, technological uncertainty, first-strike advantage, attack cost, and retaliation risk.</p>
+
+        <p>That last qualification matters. In a calibration with higher retaliation risk, increasing \(N\) favored concealment instead of attack. Density promotes preemption only when striking first reduces expected danger enough to compensate for its costs.</p>
+
+        <p>The coexistence region is the most interesting result. Identical civilizations facing identical fundamentals can rationally settle into either restraint or aggression because their beliefs help create the danger they fear. In that sense, the chain of suspicion is not merely psychological. It is an equilibrium-selection mechanism.</p>
+
+        <h2>What is missing?</h2>
+
+        <p>This first model deliberately leaves out several important features:</p>
+
+        <ul>
+          <li>explicit spatial locations and light-travel delays;</li>
+          <li>Bayesian learning over hidden doctrines;</li>
+          <li>a depletable resource state and an expansion action;</li>
+          <li>pair-specific attacks and exact random opponent counts; and</li>
+          <li>births of newly emerging civilizations.</li>
+        </ul>
+
+        <p>The next useful step is an exact small-\(N\) solver that retains the random vector of opponent states. Comparing it with this anonymous approximation would show when a mean-field description becomes accurate.</p>
+
+        <footer class="article-foot">
+          <h3>Data and code</h3>
+          <ul>
+            <li><a href="../files/cosmic-sociology/cosmic_game.py">Python equilibrium solver</a></li>
+            <li><a href="../files/cosmic-sociology/equilibria.csv">Numerical results as CSV</a></li>
+          </ul>
+
+          <h3>Further reading</h3>
+          <ul>
+            <li>Cixin Liu, <em>The Dark Forest</em>, translated by Joel Martinsen, Tor Books, 2015.</li>
+            <li>Jean-Michel Lasry and Pierre-Louis Lions, “Mean Field Games,” <em>Japanese Journal of Mathematics</em>, 2007.</li>
+            <li>Minyi Huang, Roland P. Malhamé, and Peter E. Caines, “Large Population Stochastic Dynamic Games,” <em>Communications in Information and Systems</em>, 2006.</li>
+          </ul>
+        </footer>
+
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© 2026 Qinxin Yan</span>
+      <span><a href="mailto:qinxinyan@berkeley.edu">qinxinyan@berkeley.edu</a> · <a href="https://github.com/Qinxin-Yan">GitHub</a></span>
+    </div>
+  </footer>
+</body>
+</html>
